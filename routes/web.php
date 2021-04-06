@@ -24,6 +24,26 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/profile', 'ProfileController@index')->name('profile');
 Route::put('/profile', 'ProfileController@update')->name('profile.update');
 
+Route::get('/pembayaran', function () {
+    return view('pembayaran');
+})->name('pembayaran');
+
+Route::get('/rbigtrash', function () {
+    return view('rbigtrash');
+})->name('rbigtrash');
+
+Route::get('/informasi', function () {
+    return view('informasi');
+})->name('informasi');
+
+Route::get('/artikel', function () {
+    return view('artikel');
+})->name('artikel');
+
+Route::get('/pengguna', function () {
+    return view('pengguna');
+})->name('pengguna');
+
 Route::get('/about', function () {
     return view('about');
 })->name('about');
